@@ -111,73 +111,73 @@ ${OBJECTDIR}/_ext/29028918/LCDlib.o: ../HAL_Drivers_Source/LCDlib.c  nbproject/M
 	@${MKDIR} "${OBJECTDIR}/_ext/29028918" 
 	@${RM} ${OBJECTDIR}/_ext/29028918/LCDlib.o.d 
 	@${RM} ${OBJECTDIR}/_ext/29028918/LCDlib.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/29028918/LCDlib.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../Include" -I"../HAL_Drivers_Header" -MMD -MF "${OBJECTDIR}/_ext/29028918/LCDlib.o.d" -o ${OBJECTDIR}/_ext/29028918/LCDlib.o ../HAL_Drivers_Source/LCDlib.c  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/29028918/LCDlib.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../Include" -I"../HAL_Drivers_Header" -MMD -MF "${OBJECTDIR}/_ext/29028918/LCDlib.o.d" -o ${OBJECTDIR}/_ext/29028918/LCDlib.o ../HAL_Drivers_Source/LCDlib.c  
 	
 ${OBJECTDIR}/_ext/29028918/hal_ADC_pic32mx360f512l\ .o: ../HAL_Drivers_Source/hal_ADC_pic32mx360f512l\ .c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}/_ext/29028918" 
 	@${RM} "${OBJECTDIR}/_ext/29028918/hal_ADC_pic32mx360f512l .o".d 
 	@${RM} "${OBJECTDIR}/_ext/29028918/hal_ADC_pic32mx360f512l .o" 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/29028918/hal_ADC_pic32mx360f512l .o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../Include" -I"../HAL_Drivers_Header" -MMD -MF "${OBJECTDIR}/_ext/29028918/hal_ADC_pic32mx360f512l .o.d" -o "${OBJECTDIR}/_ext/29028918/hal_ADC_pic32mx360f512l .o" "../HAL_Drivers_Source/hal_ADC_pic32mx360f512l .c"  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/29028918/hal_ADC_pic32mx360f512l .o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../Include" -I"../HAL_Drivers_Header" -MMD -MF "${OBJECTDIR}/_ext/29028918/hal_ADC_pic32mx360f512l .o.d" -o "${OBJECTDIR}/_ext/29028918/hal_ADC_pic32mx360f512l .o" "../HAL_Drivers_Source/hal_ADC_pic32mx360f512l .c"  
 	
 ${OBJECTDIR}/_ext/29028918/hal_INT_pic32mx360f512l\ .o: ../HAL_Drivers_Source/hal_INT_pic32mx360f512l\ .c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}/_ext/29028918" 
 	@${RM} "${OBJECTDIR}/_ext/29028918/hal_INT_pic32mx360f512l .o".d 
 	@${RM} "${OBJECTDIR}/_ext/29028918/hal_INT_pic32mx360f512l .o" 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/29028918/hal_INT_pic32mx360f512l .o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../Include" -I"../HAL_Drivers_Header" -MMD -MF "${OBJECTDIR}/_ext/29028918/hal_INT_pic32mx360f512l .o.d" -o "${OBJECTDIR}/_ext/29028918/hal_INT_pic32mx360f512l .o" "../HAL_Drivers_Source/hal_INT_pic32mx360f512l .c"  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/29028918/hal_INT_pic32mx360f512l .o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../Include" -I"../HAL_Drivers_Header" -MMD -MF "${OBJECTDIR}/_ext/29028918/hal_INT_pic32mx360f512l .o.d" -o "${OBJECTDIR}/_ext/29028918/hal_INT_pic32mx360f512l .o" "../HAL_Drivers_Source/hal_INT_pic32mx360f512l .c"  
 	
 ${OBJECTDIR}/_ext/29028918/hal_i2c_pic32mx360f512l.o: ../HAL_Drivers_Source/hal_i2c_pic32mx360f512l.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}/_ext/29028918" 
 	@${RM} ${OBJECTDIR}/_ext/29028918/hal_i2c_pic32mx360f512l.o.d 
 	@${RM} ${OBJECTDIR}/_ext/29028918/hal_i2c_pic32mx360f512l.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/29028918/hal_i2c_pic32mx360f512l.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../Include" -I"../HAL_Drivers_Header" -MMD -MF "${OBJECTDIR}/_ext/29028918/hal_i2c_pic32mx360f512l.o.d" -o ${OBJECTDIR}/_ext/29028918/hal_i2c_pic32mx360f512l.o ../HAL_Drivers_Source/hal_i2c_pic32mx360f512l.c  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/29028918/hal_i2c_pic32mx360f512l.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../Include" -I"../HAL_Drivers_Header" -MMD -MF "${OBJECTDIR}/_ext/29028918/hal_i2c_pic32mx360f512l.o.d" -o ${OBJECTDIR}/_ext/29028918/hal_i2c_pic32mx360f512l.o ../HAL_Drivers_Source/hal_i2c_pic32mx360f512l.c  
 	
 ${OBJECTDIR}/_ext/29028918/hal_spi_pic32mx360f512l.o: ../HAL_Drivers_Source/hal_spi_pic32mx360f512l.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}/_ext/29028918" 
 	@${RM} ${OBJECTDIR}/_ext/29028918/hal_spi_pic32mx360f512l.o.d 
 	@${RM} ${OBJECTDIR}/_ext/29028918/hal_spi_pic32mx360f512l.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/29028918/hal_spi_pic32mx360f512l.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../Include" -I"../HAL_Drivers_Header" -MMD -MF "${OBJECTDIR}/_ext/29028918/hal_spi_pic32mx360f512l.o.d" -o ${OBJECTDIR}/_ext/29028918/hal_spi_pic32mx360f512l.o ../HAL_Drivers_Source/hal_spi_pic32mx360f512l.c  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/29028918/hal_spi_pic32mx360f512l.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../Include" -I"../HAL_Drivers_Header" -MMD -MF "${OBJECTDIR}/_ext/29028918/hal_spi_pic32mx360f512l.o.d" -o ${OBJECTDIR}/_ext/29028918/hal_spi_pic32mx360f512l.o ../HAL_Drivers_Source/hal_spi_pic32mx360f512l.c  
 	
 ${OBJECTDIR}/_ext/29028918/hal_timer_pic32mx360f512l.o: ../HAL_Drivers_Source/hal_timer_pic32mx360f512l.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}/_ext/29028918" 
 	@${RM} ${OBJECTDIR}/_ext/29028918/hal_timer_pic32mx360f512l.o.d 
 	@${RM} ${OBJECTDIR}/_ext/29028918/hal_timer_pic32mx360f512l.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/29028918/hal_timer_pic32mx360f512l.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../Include" -I"../HAL_Drivers_Header" -MMD -MF "${OBJECTDIR}/_ext/29028918/hal_timer_pic32mx360f512l.o.d" -o ${OBJECTDIR}/_ext/29028918/hal_timer_pic32mx360f512l.o ../HAL_Drivers_Source/hal_timer_pic32mx360f512l.c  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/29028918/hal_timer_pic32mx360f512l.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../Include" -I"../HAL_Drivers_Header" -MMD -MF "${OBJECTDIR}/_ext/29028918/hal_timer_pic32mx360f512l.o.d" -o ${OBJECTDIR}/_ext/29028918/hal_timer_pic32mx360f512l.o ../HAL_Drivers_Source/hal_timer_pic32mx360f512l.c  
 	
 ${OBJECTDIR}/_ext/1728301206/ADClib.o: ../Source/ADClib.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}/_ext/1728301206" 
 	@${RM} ${OBJECTDIR}/_ext/1728301206/ADClib.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1728301206/ADClib.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1728301206/ADClib.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../Include" -I"../HAL_Drivers_Header" -MMD -MF "${OBJECTDIR}/_ext/1728301206/ADClib.o.d" -o ${OBJECTDIR}/_ext/1728301206/ADClib.o ../Source/ADClib.c  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1728301206/ADClib.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../Include" -I"../HAL_Drivers_Header" -MMD -MF "${OBJECTDIR}/_ext/1728301206/ADClib.o.d" -o ${OBJECTDIR}/_ext/1728301206/ADClib.o ../Source/ADClib.c  
 	
 ${OBJECTDIR}/_ext/1728301206/DAClib.o: ../Source/DAClib.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}/_ext/1728301206" 
 	@${RM} ${OBJECTDIR}/_ext/1728301206/DAClib.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1728301206/DAClib.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1728301206/DAClib.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../Include" -I"../HAL_Drivers_Header" -MMD -MF "${OBJECTDIR}/_ext/1728301206/DAClib.o.d" -o ${OBJECTDIR}/_ext/1728301206/DAClib.o ../Source/DAClib.c  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1728301206/DAClib.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../Include" -I"../HAL_Drivers_Header" -MMD -MF "${OBJECTDIR}/_ext/1728301206/DAClib.o.d" -o ${OBJECTDIR}/_ext/1728301206/DAClib.o ../Source/DAClib.c  
 	
 ${OBJECTDIR}/_ext/1728301206/DAS32A.o: ../Source/DAS32A.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}/_ext/1728301206" 
 	@${RM} ${OBJECTDIR}/_ext/1728301206/DAS32A.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1728301206/DAS32A.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1728301206/DAS32A.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../Include" -I"../HAL_Drivers_Header" -MMD -MF "${OBJECTDIR}/_ext/1728301206/DAS32A.o.d" -o ${OBJECTDIR}/_ext/1728301206/DAS32A.o ../Source/DAS32A.c  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1728301206/DAS32A.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../Include" -I"../HAL_Drivers_Header" -MMD -MF "${OBJECTDIR}/_ext/1728301206/DAS32A.o.d" -o ${OBJECTDIR}/_ext/1728301206/DAS32A.o ../Source/DAS32A.c  
 	
 ${OBJECTDIR}/_ext/1728301206/libSEE.o: ../Source/libSEE.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}/_ext/1728301206" 
 	@${RM} ${OBJECTDIR}/_ext/1728301206/libSEE.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1728301206/libSEE.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1728301206/libSEE.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../Include" -I"../HAL_Drivers_Header" -MMD -MF "${OBJECTDIR}/_ext/1728301206/libSEE.o.d" -o ${OBJECTDIR}/_ext/1728301206/libSEE.o ../Source/libSEE.c  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1728301206/libSEE.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../Include" -I"../HAL_Drivers_Header" -MMD -MF "${OBJECTDIR}/_ext/1728301206/libSEE.o.d" -o ${OBJECTDIR}/_ext/1728301206/libSEE.o ../Source/libSEE.c  
 	
 ${OBJECTDIR}/_ext/1728301206/mylibrary-12-10-19.o: ../Source/mylibrary-12-10-19.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}/_ext/1728301206" 
 	@${RM} ${OBJECTDIR}/_ext/1728301206/mylibrary-12-10-19.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1728301206/mylibrary-12-10-19.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1728301206/mylibrary-12-10-19.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../Include" -I"../HAL_Drivers_Header" -MMD -MF "${OBJECTDIR}/_ext/1728301206/mylibrary-12-10-19.o.d" -o ${OBJECTDIR}/_ext/1728301206/mylibrary-12-10-19.o ../Source/mylibrary-12-10-19.c  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1728301206/mylibrary-12-10-19.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../Include" -I"../HAL_Drivers_Header" -MMD -MF "${OBJECTDIR}/_ext/1728301206/mylibrary-12-10-19.o.d" -o ${OBJECTDIR}/_ext/1728301206/mylibrary-12-10-19.o ../Source/mylibrary-12-10-19.c  
 	
 ${OBJECTDIR}/_ext/1728301206/serallib.o: ../Source/serallib.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}/_ext/1728301206" 
 	@${RM} ${OBJECTDIR}/_ext/1728301206/serallib.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1728301206/serallib.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1728301206/serallib.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../Include" -I"../HAL_Drivers_Header" -MMD -MF "${OBJECTDIR}/_ext/1728301206/serallib.o.d" -o ${OBJECTDIR}/_ext/1728301206/serallib.o ../Source/serallib.c  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1728301206/serallib.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"../Include" -I"../HAL_Drivers_Header" -MMD -MF "${OBJECTDIR}/_ext/1728301206/serallib.o.d" -o ${OBJECTDIR}/_ext/1728301206/serallib.o ../Source/serallib.c  
 	
 else
 ${OBJECTDIR}/_ext/29028918/LCDlib.o: ../HAL_Drivers_Source/LCDlib.c  nbproject/Makefile-${CND_CONF}.mk 
@@ -259,7 +259,7 @@ endif
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 dist/${CND_CONF}/${IMAGE_TYPE}/DAS32A.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_CC} $(MP_EXTRA_LD_PRE)    -mprocessor=$(MP_PROCESSOR_OPTION)  -o dist/${CND_CONF}/${IMAGE_TYPE}/DAS32A.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX} ${OBJECTFILES_QUOTED_IF_SPACED}       -Wl,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_LD_POST)$(MP_LINKER_FILE_OPTION),--defsym=__ICD2RAM=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,-Map="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map" 
+	${MP_CC} $(MP_EXTRA_LD_PRE)  -mdebugger -D__MPLAB_DEBUGGER_PK3=1 -mprocessor=$(MP_PROCESSOR_OPTION)  -o dist/${CND_CONF}/${IMAGE_TYPE}/DAS32A.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX} ${OBJECTFILES_QUOTED_IF_SPACED}       -Wl,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_LD_POST)$(MP_LINKER_FILE_OPTION),--defsym=__ICD2RAM=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_PK3=1,-Map="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map" 
 else
 dist/${CND_CONF}/${IMAGE_TYPE}/DAS32A.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 

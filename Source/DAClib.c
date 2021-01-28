@@ -8,14 +8,14 @@
 
 #include <plib.h>
 #include <p32xxxx.h>
-#define LDAC1 _RD11
-#define SDIN1 _RD0
-#define SCLK1 _RD9
-#define SYNC1 _RA15
-#define LDAC2 _RD8
-#define SDIN2 _RA14
-#define SCLK2 _RD10
-#define SYNC2 _RD2
+#define LDAC1 _RD11 // pin 71
+#define SDIN1 _RD0 //pin 72
+#define SCLK1 _RD9 //pin 69
+#define SYNC1 _RA15 //pin 67
+#define LDAC2 _RD8 //pin 68
+#define SDIN2 _RA14 //pin 66
+#define SCLK2 _RD10 //pin 70
+#define SYNC2 _RD2 //pin 77
 #define LDAC3 _RC4
 #define SDIN3 _RC3
 #define SCLK3 _RC1

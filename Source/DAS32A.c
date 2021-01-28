@@ -85,6 +85,9 @@ void initHW(void)
 SYSTEMConfigPerformance(72000000L);
 mOSCSetPBDIV(OSC_PB_DIV_2);
 mPORTASetPinsDigitalIn(BIT_9) ; //TachoIn
+mPORTDSetPinsDigitalOut(BIT_0 | BIT_2 |BIT_8 | BIT_9 | BIT_10| BIT_11);
+mPORTCSetPinsDigitalOut(BIT_1 | BIT_2 |BIT_3 | BIT_4); 
+mPORTASetPinsDigitalOut(BIT_14 | BIT_15) ; 
 Delayus(10);
 initADC(AINPUTS);
 Delayus(10);
@@ -167,7 +170,7 @@ uint32_t restart_T32(void)
 void LoadCellAndTacho(void)
 {
     float b_current = 0.00;
-    int k,i,a,c,b,count;
+    int i,a,b,count;
     uint32_t count1,count2;
     float b_stage_1,b_stage_2,b_stage_3,b_stage_4;
     float Hz_stage_1,Hz_stage_2,Hz_stage_3,Hz_stage_4;
@@ -245,8 +248,8 @@ void LoadCellAndTacho(void)
              b = (float)((b_array_dummy[1] + b_array_dummy[2] + b_array_dummy[3])/3.00);
            
           
-         mVFloat = (float)((b*3.125)/StaticAmpGain);
-         FourToTwenty1(mVFloat,10.00,DigitalMax);
+            mVFloat = (float)((b*3.125)/StaticAmpGain);
+            FourToTwenty1(mVFloat,10.00,DigitalMax);
          
          
         
@@ -396,6 +399,8 @@ int main(void)
     {
         ClrWdt();
         LoadCellAndTacho();
+        //FourToTwenty1(10.00,10.00,DigitalMax);
+        //FourToTwenty2(10.00,10.00,DigitalMax);
      }
    
  }

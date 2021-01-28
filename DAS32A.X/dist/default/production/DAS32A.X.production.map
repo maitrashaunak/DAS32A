@@ -53,24 +53,24 @@ Microchip PIC32 Memory-Usage Report
 kseg0 Program-Memory Usage
 section                    address  length [bytes]      (dec)  Description
 -------                 ----------  -------------------------  -----------
-.text                   0x9d000008         0x6e38       28216  App's exec code 
-.rodata                 0x9d006e40          0x104         260  Read-only const 
-.text.general_exception 0x9d006f44           0xd0         208   
-.text                   0x9d007014          0x1c0         448  App's exec code 
-.dinit                  0x9d0071d4           0x2c          44   
-.rodata                 0x9d007200           0x28          40  Read-only const 
-.text.INTRestoreInterru 0x9d007228           0x1c          28   
-.text                   0x9d007244           0x18          24  App's exec code 
-.text.CheKseg0CacheOff  0x9d00725c           0x18          24   
-.text.CheKseg0CacheOn   0x9d007274           0x18          24   
-.text                   0x9d00728c           0x10          16  App's exec code 
-.text._general_exceptio 0x9d00729c            0xc          12   
-.text._bootstrap_except 0x9d0072a8            0xc          12   
-.rodata                 0x9d0072b4            0x8           8  Read-only const 
-.text._on_reset         0x9d0072bc            0x8           8   
-.text._on_bootstrap     0x9d0072c4            0x8           8   
-.text.INTDisableInterru 0x9d0072cc            0x8           8   
-      Total kseg0_program_mem used  :      0x72cc       29388  5.6% of 0x80000
+.text                   0x9d000008         0x6e5c       28252  App's exec code 
+.rodata                 0x9d006e64          0x104         260  Read-only const 
+.text.general_exception 0x9d006f68           0xd0         208   
+.text                   0x9d007038          0x1c0         448  App's exec code 
+.dinit                  0x9d0071f8           0x2c          44   
+.rodata                 0x9d007224           0x28          40  Read-only const 
+.text.INTRestoreInterru 0x9d00724c           0x1c          28   
+.text                   0x9d007268           0x18          24  App's exec code 
+.text.CheKseg0CacheOff  0x9d007280           0x18          24   
+.text.CheKseg0CacheOn   0x9d007298           0x18          24   
+.text                   0x9d0072b0           0x10          16  App's exec code 
+.text._general_exceptio 0x9d0072c0            0xc          12   
+.text._bootstrap_except 0x9d0072cc            0xc          12   
+.rodata                 0x9d0072d8            0x8           8  Read-only const 
+.text._on_reset         0x9d0072e0            0x8           8   
+.text._on_bootstrap     0x9d0072e8            0x8           8   
+.text.INTDisableInterru 0x9d0072f0            0x8           8   
+      Total kseg0_program_mem used  :      0x72f0       29424  5.6% of 0x80000
 
 kseg0 Boot-Memory Usage
 section                    address  length [bytes]      (dec)  Description
@@ -90,7 +90,7 @@ section                    address  length [bytes]      (dec)  Description
 .bev_excpt              0xbfc00380           0x10          16  BEV-Exception 
          Total kseg1_boot_mem used  :       0x200         512  43.8% of 0x490
         --------------------------------------------------------------------------
-         Total Program Memory used  :      0x74dc       29916  5.6% of 0x81e00
+         Total Program Memory used  :      0x7500       29952  5.6% of 0x81e00
         --------------------------------------------------------------------------
 
 
@@ -791,7 +791,7 @@ LOAD /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic3
  .debug_pubnames
                 0x00000bb4       0x2b /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(int_restore_interrupts_lib.o)
 
-.debug_info     0x00000000     0xa81d
+.debug_info     0x00000000     0xa85f
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000     0x141a build/default/production/_ext/29028918/LCDlib.o
  .debug_info    0x0000141a      0x9cb build/default/production/_ext/29028918/hal_ADC_pic32mx360f512l .o
@@ -801,19 +801,19 @@ LOAD /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic3
  .debug_info    0x000037ed      0xcab build/default/production/_ext/29028918/hal_timer_pic32mx360f512l.o
  .debug_info    0x00004498      0x71a build/default/production/_ext/1728301206/ADClib.o
  .debug_info    0x00004bb2     0x1681 build/default/production/_ext/1728301206/DAClib.o
- .debug_info    0x00006233     0x2056 build/default/production/_ext/1728301206/DAS32A.o
- .debug_info    0x00008289      0x8cd build/default/production/_ext/1728301206/libSEE.o
- .debug_info    0x00008b56      0x684 build/default/production/_ext/1728301206/mylibrary-12-10-19.o
- .debug_info    0x000091da      0xe8a build/default/production/_ext/1728301206/serallib.o
- .debug_info    0x0000a064      0x17f /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/libgcc.a(floatunsisf.o)
- .debug_info    0x0000a1e3        0x0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(ctype.o)
- .debug_info    0x0000a1e3      0x102 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-general-exception-handler.o)
- .debug_info    0x0000a2e5      0x106 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-bootstrap-exception-handler.o)
- .debug_info    0x0000a3eb       0xe0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-on-reset.o)
- .debug_info    0x0000a4cb       0xe8 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-on-bootstrap.o)
- .debug_info    0x0000a5b3       0xd4 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(pcache.o)
- .debug_info    0x0000a687       0xcb /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(int_disable_interrupts_lib.o)
- .debug_info    0x0000a752       0xcb /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(int_restore_interrupts_lib.o)
+ .debug_info    0x00006233     0x2098 build/default/production/_ext/1728301206/DAS32A.o
+ .debug_info    0x000082cb      0x8cd build/default/production/_ext/1728301206/libSEE.o
+ .debug_info    0x00008b98      0x684 build/default/production/_ext/1728301206/mylibrary-12-10-19.o
+ .debug_info    0x0000921c      0xe8a build/default/production/_ext/1728301206/serallib.o
+ .debug_info    0x0000a0a6      0x17f /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/libgcc.a(floatunsisf.o)
+ .debug_info    0x0000a225        0x0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(ctype.o)
+ .debug_info    0x0000a225      0x102 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-general-exception-handler.o)
+ .debug_info    0x0000a327      0x106 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-bootstrap-exception-handler.o)
+ .debug_info    0x0000a42d       0xe0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-on-reset.o)
+ .debug_info    0x0000a50d       0xe8 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-on-bootstrap.o)
+ .debug_info    0x0000a5f5       0xd4 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(pcache.o)
+ .debug_info    0x0000a6c9       0xcb /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(int_disable_interrupts_lib.o)
+ .debug_info    0x0000a794       0xcb /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(int_restore_interrupts_lib.o)
 
 .debug_abbrev   0x00000000     0x10fd
  *(.debug_abbrev)
@@ -839,7 +839,7 @@ LOAD /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic3
  .debug_abbrev  0x000010b3       0x25 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(int_disable_interrupts_lib.o)
  .debug_abbrev  0x000010d8       0x25 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(int_restore_interrupts_lib.o)
 
-.debug_line     0x00000000     0x1bac
+.debug_line     0x00000000     0x1baf
  *(.debug_line)
  .debug_line    0x00000000      0x2c4 build/default/production/_ext/29028918/LCDlib.o
  .debug_line    0x000002c4      0x15f build/default/production/_ext/29028918/hal_ADC_pic32mx360f512l .o
@@ -849,19 +849,19 @@ LOAD /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic3
  .debug_line    0x000008f2      0x215 build/default/production/_ext/29028918/hal_timer_pic32mx360f512l.o
  .debug_line    0x00000b07       0xf8 build/default/production/_ext/1728301206/ADClib.o
  .debug_line    0x00000bff      0x23a build/default/production/_ext/1728301206/DAClib.o
- .debug_line    0x00000e39      0x457 build/default/production/_ext/1728301206/DAS32A.o
- .debug_line    0x00001290      0x1a2 build/default/production/_ext/1728301206/libSEE.o
- .debug_line    0x00001432      0x1d6 build/default/production/_ext/1728301206/mylibrary-12-10-19.o
- .debug_line    0x00001608      0x17b build/default/production/_ext/1728301206/serallib.o
- .debug_line    0x00001783       0x6d /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/libgcc.a(floatunsisf.o)
- .debug_line    0x000017f0        0x0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(ctype.o)
- .debug_line    0x000017f0       0xa4 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-general-exception-handler.o)
- .debug_line    0x00001894       0xa6 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-bootstrap-exception-handler.o)
- .debug_line    0x0000193a       0x93 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-on-reset.o)
- .debug_line    0x000019cd       0x97 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-on-bootstrap.o)
- .debug_line    0x00001a64       0x62 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(pcache.o)
- .debug_line    0x00001ac6       0x73 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(int_disable_interrupts_lib.o)
- .debug_line    0x00001b39       0x73 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(int_restore_interrupts_lib.o)
+ .debug_line    0x00000e39      0x45a build/default/production/_ext/1728301206/DAS32A.o
+ .debug_line    0x00001293      0x1a2 build/default/production/_ext/1728301206/libSEE.o
+ .debug_line    0x00001435      0x1d6 build/default/production/_ext/1728301206/mylibrary-12-10-19.o
+ .debug_line    0x0000160b      0x17b build/default/production/_ext/1728301206/serallib.o
+ .debug_line    0x00001786       0x6d /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/libgcc.a(floatunsisf.o)
+ .debug_line    0x000017f3        0x0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(ctype.o)
+ .debug_line    0x000017f3       0xa4 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-general-exception-handler.o)
+ .debug_line    0x00001897       0xa6 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-bootstrap-exception-handler.o)
+ .debug_line    0x0000193d       0x93 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-on-reset.o)
+ .debug_line    0x000019d0       0x97 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-on-bootstrap.o)
+ .debug_line    0x00001a67       0x62 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(pcache.o)
+ .debug_line    0x00001ac9       0x73 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(int_disable_interrupts_lib.o)
+ .debug_line    0x00001b3c       0x73 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(int_restore_interrupts_lib.o)
 
 .debug_frame    0x00000000      0xc90
  *(.debug_frame)
@@ -886,7 +886,7 @@ LOAD /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic3
  .debug_frame   0x00000c50       0x20 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(int_disable_interrupts_lib.o)
  .debug_frame   0x00000c70       0x20 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(int_restore_interrupts_lib.o)
 
-.debug_str      0x00000000      0x521
+.debug_str      0x00000000      0x53c
  *(.debug_str)
  .debug_str     0x00000000       0xe2 build/default/production/_ext/29028918/LCDlib.o
  .debug_str     0x000000e2        0x5 build/default/production/_ext/29028918/hal_ADC_pic32mx360f512l .o
@@ -896,19 +896,19 @@ LOAD /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic3
  .debug_str     0x0000011a       0x14 build/default/production/_ext/29028918/hal_timer_pic32mx360f512l.o
  .debug_str     0x0000012e        0x0 build/default/production/_ext/1728301206/ADClib.o
  .debug_str     0x0000012e      0x139 build/default/production/_ext/1728301206/DAClib.o
- .debug_str     0x00000267      0x238 build/default/production/_ext/1728301206/DAS32A.o
- .debug_str     0x0000049f       0x14 build/default/production/_ext/1728301206/libSEE.o
- .debug_str     0x000004b3        0xe build/default/production/_ext/1728301206/mylibrary-12-10-19.o
- .debug_str     0x000004c1       0x60 build/default/production/_ext/1728301206/serallib.o
- .debug_str     0x00000521        0x0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/libgcc.a(floatunsisf.o)
- .debug_str     0x00000521        0x0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(ctype.o)
- .debug_str     0x00000521        0x0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-general-exception-handler.o)
- .debug_str     0x00000521        0x0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-bootstrap-exception-handler.o)
- .debug_str     0x00000521        0x0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-on-reset.o)
- .debug_str     0x00000521        0x0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-on-bootstrap.o)
- .debug_str     0x00000521        0x0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(pcache.o)
- .debug_str     0x00000521        0x0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(int_disable_interrupts_lib.o)
- .debug_str     0x00000521        0x0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(int_restore_interrupts_lib.o)
+ .debug_str     0x00000267      0x253 build/default/production/_ext/1728301206/DAS32A.o
+ .debug_str     0x000004ba       0x14 build/default/production/_ext/1728301206/libSEE.o
+ .debug_str     0x000004ce        0xe build/default/production/_ext/1728301206/mylibrary-12-10-19.o
+ .debug_str     0x000004dc       0x60 build/default/production/_ext/1728301206/serallib.o
+ .debug_str     0x0000053c        0x0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/libgcc.a(floatunsisf.o)
+ .debug_str     0x0000053c        0x0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(ctype.o)
+ .debug_str     0x0000053c        0x0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-general-exception-handler.o)
+ .debug_str     0x0000053c        0x0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-bootstrap-exception-handler.o)
+ .debug_str     0x0000053c        0x0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-on-reset.o)
+ .debug_str     0x0000053c        0x0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-on-bootstrap.o)
+ .debug_str     0x0000053c        0x0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(pcache.o)
+ .debug_str     0x0000053c        0x0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(int_disable_interrupts_lib.o)
+ .debug_str     0x0000053c        0x0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(int_restore_interrupts_lib.o)
 
 .debug_loc      0x00000000       0x68
  *(.debug_loc)
@@ -1274,244 +1274,244 @@ LOAD data_init
 .data%z77       0x00000000        0x0
  .data          0x00000000        0x0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/crt0.o
 
-.text           0x9d000008     0x6e38
- .text          0x9d000008     0x1758 build/default/production/_ext/1728301206/DAS32A.o
+.text           0x9d000008     0x6e5c
+ .text          0x9d000008     0x177c build/default/production/_ext/1728301206/DAS32A.o
                 0x9d000008                initHW
-                0x9d000424                initT45
-                0x9d000498                initT32
-                0x9d00050c                stop_T32
-                0x9d000568                start_T32
-                0x9d000598                restart_T32
-                0x9d0005e0                LoadCellAndTacho
-                0x9d00163c                main
- .text          0x9d001760      0xfe4 build/default/production/_ext/1728301206/mylibrary-12-10-19.o
-                0x9d001760                Reverse
-                0x9d001818                reverse
-                0x9d0018dc                intToStr
-                0x9d001a4c                ftoa
-                0x9d001c60                power
-                0x9d001d08                atoi
-                0x9d001e6c                atoiP
-                0x9d001f9c                itoa
-                0x9d0020c4                atof
-                0x9d00235c                qsorti
-                0x9d0024b8                swapi
-                0x9d00253c                qsortf
-                0x9d0026c0                swapf
- .text          0x9d002744      0xc0c build/default/production/_ext/29028918/hal_timer_pic32mx360f512l.o
-                0x9d002744                hal_config_timer
-                0x9d002878                hal_config_timer_pre_scalar
-                0x9d0028c0                hal_config_timer_T32
-                0x9d002938                hal_config_timer_TCS
-                0x9d0029b0                hal_timer_write_PR
-                0x9d0029e4                hal_timer_write_TMR
-                0x9d002a18                hal_timer_read_TMR
-                0x9d002a4c                hal_config_timer_on_off
-                0x9d002ac0                hal_config_timer_it
-                0x9d002f28                hal_config_timer_it_EI
-                0x9d0031f0                hal_timer_clear_it_flag
- .text          0x9d003350      0x910 build/default/production/_ext/29028918/hal_INT_pic32mx360f512l .o
-                0x9d003350                hal_clear_ext_int_flag
-                0x9d003450                hal_config_ext_int_edge_select
-                0x9d0036ac                hal_config_ext_int_prority
-                0x9d0037f8                hal_config_ext_int_sub_prority
-                0x9d003944                hal_config_ext_int_enable_disable
-                0x9d003ba0                hal_config_ext_int
- .text          0x9d003c60      0x8ec /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libm.a(fp32.o)
-                0x9d003c60                __subsf3
-                0x9d003c60                fpsub
-                0x9d003c68                fpadd
-                0x9d003c68                __addsf3
-                0x9d003ed4                __mulsf3
-                0x9d003ed4                fpmul
-                0x9d00408c                __divsf3
-                0x9d00408c                fpdiv
-                0x9d0042b8                sitofp
-                0x9d0042b8                __floatsisf
-                0x9d0042b8                litofp
-                0x9d004314                uitofp
-                0x9d004314                ultofp
-                0x9d004360                __fixsfsi
-                0x9d004360                fptoli
-                0x9d004360                fptosi
-                0x9d0043d8                fptoui
-                0x9d0043d8                __fixunssfsi
-                0x9d0043d8                fptoul
-                0x9d00444c                __lesf2
-                0x9d00444c                __nesf2
-                0x9d00444c                __gtsf2
-                0x9d00444c                __eqsf2
-                0x9d00444c                __ltsf2
-                0x9d00444c                fpcmp
-                0x9d00444c                __gesf2
-                0x9d0044e0                fabsf
-                0x9d0044e0                fpfabs
-                0x9d0044f0                __negsf2
-                0x9d004500                fpnan
-                0x9d004500                nanf
- .text          0x9d00454c      0x7d4 build/default/production/_ext/1728301206/DAClib.o
-                0x9d00454c                FourToTwenty1
-                0x9d0045f0                FourToTwenty2
-                0x9d004694                FourToTwenty3
-                0x9d004738                FourToTwentyDrive1
-                0x9d004794                FourToTwentyDrive2
-                0x9d0047fc                FourToTwentyDrive3
-                0x9d004864                writeDAC1
-                0x9d0049f8                writeDAC2
-                0x9d004b8c                writeDAC3
- .text          0x9d004d20      0x750 build/default/production/_ext/29028918/LCDlib.o
-                0x9d004d20                initLCD
-                0x9d004ee8                initLCDNoBlink
-                0x9d0050b0                readLCD
-                0x9d005138                writeLCD
-                0x9d0051d8                putsLCD
-                0x9d005318                putsLCD4
-                0x9d005380                Delayms
-                0x9d0053fc                Delayus
- .text          0x9d005470      0x70c build/default/production/_ext/29028918/hal_i2c_pic32mx360f512l.o
-                0x9d005470                hal_config_i2c
-                0x9d0054d0                hal_config_i2c_brg
-                0x9d005504                hal_config_i2c_on_off
-                0x9d005578                hal_i2c_send_start
-                0x9d0055e8                hal_i2c_send_stop
-                0x9d005654                hal_i2c_send_restart
-                0x9d0056c0                hal_i2c_send_ack
-                0x9d005740                hal_i2c_send_nack
-                0x9d0057cc                hal_i2c_enable_receive
-                0x9d005820                hal_i2c_check_ack_status
-                0x9d005850                hal_i2c_put_data
-                0x9d0058c0                hal_i2c_get_gata
-                0x9d005924                hal_i2c_write
-                0x9d005a34                hal_i2c_read
- .text          0x9d005b7c      0x500 build/default/production/_ext/29028918/hal_spi_pic32mx360f512l.o
-                0x9d005b7c                hal_config_spi_master_slave
-                0x9d005bf4                hal_config_spi_mode
-                0x9d005d40                hal_config_spi_brg
-                0x9d005d74                hal_config_spi_sdo_enable_disable
-                0x9d005dec                hal_config_spi_sdi_enable_disable
-                0x9d005e64                hal_config_spi_smp_set_reset
-                0x9d005edc                hal_config_spi_on_off
-                0x9d005f50                hal_write_read_spi
-                0x9d005fa4                _hal_config_spi
- .text          0x9d00607c      0x480 build/default/production/_ext/1728301206/serallib.o
-                0x9d00607c                initU1
-                0x9d0060e0                putU1
-                0x9d006144                getU1
-                0x9d0061ac                U1puts
-                0x9d00621c                getsnU1
-                0x9d0062bc                initU2
-                0x9d006320                putU2
-                0x9d006384                getU2
-                0x9d0063ec                puts
-                0x9d00645c                getsn
- .text          0x9d0064fc      0x434 build/default/production/_ext/29028918/hal_ADC_pic32mx360f512l .o
-                0x9d0064fc                hal_config_adc10
-                0x9d0065fc                hal_config_adc10_idle_state
-                0x9d006664                hal_config_adc10_opformat
-                0x9d0066b0                hal_config_adc10_conversion
-                0x9d0066fc                hal_config_adc10_clk
-                0x9d006764                hal_config_adc10_auto_samp
-                0x9d0067cc                hal_config_adc10_samp_time
-                0x9d006818                hal_config_adc10_port_config
-                0x9d00684c                hal_config_adc10_on_off
-                0x9d0068c0                hal_adc10_read_AD
- .text          0x9d006930      0x3a8 build/default/production/_ext/1728301206/libSEE.o
-                0x9d006930                initSEE
-                0x9d0069c4                writeSPI2
-                0x9d006a10                readStatus
-                0x9d006a7c                readSEE
-                0x9d006b8c                writeEnable
-                0x9d006be4                writeSEE
- .text          0x9d006cd8      0x168 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(strlen.o)
-                0x9d006cd8                strlen
+                0x9d000448                initT45
+                0x9d0004bc                initT32
+                0x9d000530                stop_T32
+                0x9d00058c                start_T32
+                0x9d0005bc                restart_T32
+                0x9d000604                LoadCellAndTacho
+                0x9d001660                main
+ .text          0x9d001784      0xfe4 build/default/production/_ext/1728301206/mylibrary-12-10-19.o
+                0x9d001784                Reverse
+                0x9d00183c                reverse
+                0x9d001900                intToStr
+                0x9d001a70                ftoa
+                0x9d001c84                power
+                0x9d001d2c                atoi
+                0x9d001e90                atoiP
+                0x9d001fc0                itoa
+                0x9d0020e8                atof
+                0x9d002380                qsorti
+                0x9d0024dc                swapi
+                0x9d002560                qsortf
+                0x9d0026e4                swapf
+ .text          0x9d002768      0xc0c build/default/production/_ext/29028918/hal_timer_pic32mx360f512l.o
+                0x9d002768                hal_config_timer
+                0x9d00289c                hal_config_timer_pre_scalar
+                0x9d0028e4                hal_config_timer_T32
+                0x9d00295c                hal_config_timer_TCS
+                0x9d0029d4                hal_timer_write_PR
+                0x9d002a08                hal_timer_write_TMR
+                0x9d002a3c                hal_timer_read_TMR
+                0x9d002a70                hal_config_timer_on_off
+                0x9d002ae4                hal_config_timer_it
+                0x9d002f4c                hal_config_timer_it_EI
+                0x9d003214                hal_timer_clear_it_flag
+ .text          0x9d003374      0x910 build/default/production/_ext/29028918/hal_INT_pic32mx360f512l .o
+                0x9d003374                hal_clear_ext_int_flag
+                0x9d003474                hal_config_ext_int_edge_select
+                0x9d0036d0                hal_config_ext_int_prority
+                0x9d00381c                hal_config_ext_int_sub_prority
+                0x9d003968                hal_config_ext_int_enable_disable
+                0x9d003bc4                hal_config_ext_int
+ .text          0x9d003c84      0x8ec /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libm.a(fp32.o)
+                0x9d003c84                __subsf3
+                0x9d003c84                fpsub
+                0x9d003c8c                fpadd
+                0x9d003c8c                __addsf3
+                0x9d003ef8                __mulsf3
+                0x9d003ef8                fpmul
+                0x9d0040b0                __divsf3
+                0x9d0040b0                fpdiv
+                0x9d0042dc                sitofp
+                0x9d0042dc                __floatsisf
+                0x9d0042dc                litofp
+                0x9d004338                uitofp
+                0x9d004338                ultofp
+                0x9d004384                __fixsfsi
+                0x9d004384                fptoli
+                0x9d004384                fptosi
+                0x9d0043fc                fptoui
+                0x9d0043fc                __fixunssfsi
+                0x9d0043fc                fptoul
+                0x9d004470                __lesf2
+                0x9d004470                __nesf2
+                0x9d004470                __gtsf2
+                0x9d004470                __eqsf2
+                0x9d004470                __ltsf2
+                0x9d004470                fpcmp
+                0x9d004470                __gesf2
+                0x9d004504                fabsf
+                0x9d004504                fpfabs
+                0x9d004514                __negsf2
+                0x9d004524                fpnan
+                0x9d004524                nanf
+ .text          0x9d004570      0x7d4 build/default/production/_ext/1728301206/DAClib.o
+                0x9d004570                FourToTwenty1
+                0x9d004614                FourToTwenty2
+                0x9d0046b8                FourToTwenty3
+                0x9d00475c                FourToTwentyDrive1
+                0x9d0047b8                FourToTwentyDrive2
+                0x9d004820                FourToTwentyDrive3
+                0x9d004888                writeDAC1
+                0x9d004a1c                writeDAC2
+                0x9d004bb0                writeDAC3
+ .text          0x9d004d44      0x750 build/default/production/_ext/29028918/LCDlib.o
+                0x9d004d44                initLCD
+                0x9d004f0c                initLCDNoBlink
+                0x9d0050d4                readLCD
+                0x9d00515c                writeLCD
+                0x9d0051fc                putsLCD
+                0x9d00533c                putsLCD4
+                0x9d0053a4                Delayms
+                0x9d005420                Delayus
+ .text          0x9d005494      0x70c build/default/production/_ext/29028918/hal_i2c_pic32mx360f512l.o
+                0x9d005494                hal_config_i2c
+                0x9d0054f4                hal_config_i2c_brg
+                0x9d005528                hal_config_i2c_on_off
+                0x9d00559c                hal_i2c_send_start
+                0x9d00560c                hal_i2c_send_stop
+                0x9d005678                hal_i2c_send_restart
+                0x9d0056e4                hal_i2c_send_ack
+                0x9d005764                hal_i2c_send_nack
+                0x9d0057f0                hal_i2c_enable_receive
+                0x9d005844                hal_i2c_check_ack_status
+                0x9d005874                hal_i2c_put_data
+                0x9d0058e4                hal_i2c_get_gata
+                0x9d005948                hal_i2c_write
+                0x9d005a58                hal_i2c_read
+ .text          0x9d005ba0      0x500 build/default/production/_ext/29028918/hal_spi_pic32mx360f512l.o
+                0x9d005ba0                hal_config_spi_master_slave
+                0x9d005c18                hal_config_spi_mode
+                0x9d005d64                hal_config_spi_brg
+                0x9d005d98                hal_config_spi_sdo_enable_disable
+                0x9d005e10                hal_config_spi_sdi_enable_disable
+                0x9d005e88                hal_config_spi_smp_set_reset
+                0x9d005f00                hal_config_spi_on_off
+                0x9d005f74                hal_write_read_spi
+                0x9d005fc8                _hal_config_spi
+ .text          0x9d0060a0      0x480 build/default/production/_ext/1728301206/serallib.o
+                0x9d0060a0                initU1
+                0x9d006104                putU1
+                0x9d006168                getU1
+                0x9d0061d0                U1puts
+                0x9d006240                getsnU1
+                0x9d0062e0                initU2
+                0x9d006344                putU2
+                0x9d0063a8                getU2
+                0x9d006410                puts
+                0x9d006480                getsn
+ .text          0x9d006520      0x434 build/default/production/_ext/29028918/hal_ADC_pic32mx360f512l .o
+                0x9d006520                hal_config_adc10
+                0x9d006620                hal_config_adc10_idle_state
+                0x9d006688                hal_config_adc10_opformat
+                0x9d0066d4                hal_config_adc10_conversion
+                0x9d006720                hal_config_adc10_clk
+                0x9d006788                hal_config_adc10_auto_samp
+                0x9d0067f0                hal_config_adc10_samp_time
+                0x9d00683c                hal_config_adc10_port_config
+                0x9d006870                hal_config_adc10_on_off
+                0x9d0068e4                hal_adc10_read_AD
+ .text          0x9d006954      0x3a8 build/default/production/_ext/1728301206/libSEE.o
+                0x9d006954                initSEE
+                0x9d0069e8                writeSPI2
+                0x9d006a34                readStatus
+                0x9d006aa0                readSEE
+                0x9d006bb0                writeEnable
+                0x9d006c08                writeSEE
+ .text          0x9d006cfc      0x168 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(strlen.o)
+                0x9d006cfc                strlen
 
-.rodata         0x9d006e40      0x104
- .rodata        0x9d006e40      0x104 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(ctype.o)
-                0x9d006e40                _ctype
+.rodata         0x9d006e64      0x104
+ .rodata        0x9d006e64      0x104 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(ctype.o)
+                0x9d006e64                _ctype
 
 .text.general_exception
-                0x9d006f44       0xd0
+                0x9d006f68       0xd0
  .text.general_exception
-                0x9d006f44       0xd0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(general-exception.o)
-                0x9d006f44                _general_exception_context
+                0x9d006f68       0xd0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(general-exception.o)
+                0x9d006f68                _general_exception_context
 
-.text           0x9d007014      0x1c0
- .text          0x9d007014       0xcc build/default/production/_ext/1728301206/ADClib.o
-                0x9d007014                initADC
-                0x9d007098                readADC
- .text          0x9d0070e0       0xa8 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(memset.o)
-                0x9d0070e0                memset
- .text          0x9d007188       0x4c /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/libgcc.a(floatunsisf.o)
-                0x9d007188                __floatunsisf
+.text           0x9d007038      0x1c0
+ .text          0x9d007038       0xcc build/default/production/_ext/1728301206/ADClib.o
+                0x9d007038                initADC
+                0x9d0070bc                readADC
+ .text          0x9d007104       0xa8 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(memset.o)
+                0x9d007104                memset
+ .text          0x9d0071ac       0x4c /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/libgcc.a(floatunsisf.o)
+                0x9d0071ac                __floatunsisf
 
-.dinit          0x9d0071d4       0x2c
- .dinit         0x9d0071d4       0x2c data_init
+.dinit          0x9d0071f8       0x2c
+ .dinit         0x9d0071f8       0x2c data_init
 
-.rodata         0x9d007200       0x28
- .rodata        0x9d007200       0x28 build/default/production/_ext/1728301206/DAS32A.o
-                0x9d007200                WeightFilter
-                0x9d007204                SpeedFilter
-                0x9d007208                StaticAmpGain
-                0x9d00720c                DigitalMax
+.rodata         0x9d007224       0x28
+ .rodata        0x9d007224       0x28 build/default/production/_ext/1728301206/DAS32A.o
+                0x9d007224                WeightFilter
+                0x9d007228                SpeedFilter
+                0x9d00722c                StaticAmpGain
+                0x9d007230                DigitalMax
 
 .text.INTRestoreInterrupts
-                0x9d007228       0x1c
+                0x9d00724c       0x1c
  .text.INTRestoreInterrupts
-                0x9d007228       0x1c /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(int_restore_interrupts_lib.o)
-                0x9d007228                INTRestoreInterrupts
+                0x9d00724c       0x1c /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(int_restore_interrupts_lib.o)
+                0x9d00724c                INTRestoreInterrupts
 
-.text           0x9d007244       0x18
- .text          0x9d007244       0x18 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-nmi-handler.o)
-                0x9d007244                _nmi_handler
+.text           0x9d007268       0x18
+ .text          0x9d007268       0x18 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-nmi-handler.o)
+                0x9d007268                _nmi_handler
 
 .text.CheKseg0CacheOff
-                0x9d00725c       0x18
+                0x9d007280       0x18
  .text.CheKseg0CacheOff
-                0x9d00725c       0x18 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(pcache.o)
-                0x9d00725c                CheKseg0CacheOff
+                0x9d007280       0x18 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(pcache.o)
+                0x9d007280                CheKseg0CacheOff
 
 .text.CheKseg0CacheOn
-                0x9d007274       0x18
+                0x9d007298       0x18
  .text.CheKseg0CacheOn
-                0x9d007274       0x18 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(pcache.o)
-                0x9d007274                CheKseg0CacheOn
+                0x9d007298       0x18 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(pcache.o)
+                0x9d007298                CheKseg0CacheOn
 
-.text           0x9d00728c       0x10
- .text          0x9d00728c       0x10 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/crt0.o
-                0x9d007294                __crt0_exit
+.text           0x9d0072b0       0x10
+ .text          0x9d0072b0       0x10 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/crt0.o
+                0x9d0072b8                __crt0_exit
 
 .text._general_exception_handler
-                0x9d00729c        0xc
+                0x9d0072c0        0xc
  .text._general_exception_handler
-                0x9d00729c        0xc /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-general-exception-handler.o)
-                0x9d00729c                _general_exception_handler
+                0x9d0072c0        0xc /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-general-exception-handler.o)
+                0x9d0072c0                _general_exception_handler
 
 .text._bootstrap_exception_handler
-                0x9d0072a8        0xc
+                0x9d0072cc        0xc
  .text._bootstrap_exception_handler
-                0x9d0072a8        0xc /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-bootstrap-exception-handler.o)
-                0x9d0072a8                _bootstrap_exception_handler
+                0x9d0072cc        0xc /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-bootstrap-exception-handler.o)
+                0x9d0072cc                _bootstrap_exception_handler
 
-.rodata         0x9d0072b4        0x8
- .rodata        0x9d0072b4        0x8 build/default/production/_ext/1728301206/mylibrary-12-10-19.o
+.rodata         0x9d0072d8        0x8
+ .rodata        0x9d0072d8        0x8 build/default/production/_ext/1728301206/mylibrary-12-10-19.o
 
 .text._on_reset
-                0x9d0072bc        0x8
+                0x9d0072e0        0x8
  .text._on_reset
-                0x9d0072bc        0x8 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-on-reset.o)
-                0x9d0072bc                _on_reset
+                0x9d0072e0        0x8 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-on-reset.o)
+                0x9d0072e0                _on_reset
 
 .text._on_bootstrap
-                0x9d0072c4        0x8
+                0x9d0072e8        0x8
  .text._on_bootstrap
-                0x9d0072c4        0x8 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-on-bootstrap.o)
-                0x9d0072c4                _on_bootstrap
+                0x9d0072e8        0x8 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-on-bootstrap.o)
+                0x9d0072e8                _on_bootstrap
 
 .text.INTDisableInterrupts
-                0x9d0072cc        0x8
+                0x9d0072f0        0x8
  .text.INTDisableInterrupts
-                0x9d0072cc        0x8 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(int_disable_interrupts_lib.o)
-                0x9d0072cc                INTDisableInterrupts
+                0x9d0072f0        0x8 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(int_disable_interrupts_lib.o)
+                0x9d0072f0                INTDisableInterrupts
 
 .text%z78       0x00000000        0x0
  .text          0x00000000        0x0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/./proc/32MX360F512L/processor.o
