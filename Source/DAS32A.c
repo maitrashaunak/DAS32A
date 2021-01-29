@@ -1,6 +1,7 @@
 /* DAS32A V4
  * Date - 12-01-2021
  * Modified from WF Controller Unit V47.00
+ * AOUT2 is used for Load Cell & AOUT1 is for Tacho
  * Author : Shaunak Maitra
  * 
  ******************************************************************************************/
@@ -249,7 +250,7 @@ void LoadCellAndTacho(void)
            
           
             mVFloat = (float)((b*3.125)/StaticAmpGain);
-            FourToTwenty1(mVFloat,10.00,DigitalMax);
+            FourToTwenty2(mVFloat,10.00,DigitalMax);
          
          
         
@@ -295,7 +296,7 @@ void LoadCellAndTacho(void)
             memset(Hz_Array_Stage_2, 0, sizeof(Hz_array));
             memset(Hz_Array_Stage_3, 0, sizeof(Hz_array));
             memset(Hz_Array_Stage_4, 0, sizeof(Hz_array));
-            FourToTwenty2(0.00,500.00,DigitalMax);
+            FourToTwenty1(0.00,500.00,DigitalMax);
           }
 
          }

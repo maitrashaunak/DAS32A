@@ -791,7 +791,7 @@ LOAD /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic3
  .debug_pubnames
                 0x00000bb4       0x2b /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(int_restore_interrupts_lib.o)
 
-.debug_info     0x00000000     0xa85f
+.debug_info     0x00000000     0xa85e
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000     0x141a build/default/production/_ext/29028918/LCDlib.o
  .debug_info    0x0000141a      0x9cb build/default/production/_ext/29028918/hal_ADC_pic32mx360f512l .o
@@ -801,19 +801,19 @@ LOAD /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic3
  .debug_info    0x000037ed      0xcab build/default/production/_ext/29028918/hal_timer_pic32mx360f512l.o
  .debug_info    0x00004498      0x71a build/default/production/_ext/1728301206/ADClib.o
  .debug_info    0x00004bb2     0x1681 build/default/production/_ext/1728301206/DAClib.o
- .debug_info    0x00006233     0x2098 build/default/production/_ext/1728301206/DAS32A.o
- .debug_info    0x000082cb      0x8cd build/default/production/_ext/1728301206/libSEE.o
- .debug_info    0x00008b98      0x684 build/default/production/_ext/1728301206/mylibrary-12-10-19.o
- .debug_info    0x0000921c      0xe8a build/default/production/_ext/1728301206/serallib.o
- .debug_info    0x0000a0a6      0x17f /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/libgcc.a(floatunsisf.o)
- .debug_info    0x0000a225        0x0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(ctype.o)
- .debug_info    0x0000a225      0x102 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-general-exception-handler.o)
- .debug_info    0x0000a327      0x106 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-bootstrap-exception-handler.o)
- .debug_info    0x0000a42d       0xe0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-on-reset.o)
- .debug_info    0x0000a50d       0xe8 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-on-bootstrap.o)
- .debug_info    0x0000a5f5       0xd4 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(pcache.o)
- .debug_info    0x0000a6c9       0xcb /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(int_disable_interrupts_lib.o)
- .debug_info    0x0000a794       0xcb /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(int_restore_interrupts_lib.o)
+ .debug_info    0x00006233     0x2097 build/default/production/_ext/1728301206/DAS32A.o
+ .debug_info    0x000082ca      0x8cd build/default/production/_ext/1728301206/libSEE.o
+ .debug_info    0x00008b97      0x684 build/default/production/_ext/1728301206/mylibrary-12-10-19.o
+ .debug_info    0x0000921b      0xe8a build/default/production/_ext/1728301206/serallib.o
+ .debug_info    0x0000a0a5      0x17f /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/libgcc.a(floatunsisf.o)
+ .debug_info    0x0000a224        0x0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(ctype.o)
+ .debug_info    0x0000a224      0x102 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-general-exception-handler.o)
+ .debug_info    0x0000a326      0x106 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-bootstrap-exception-handler.o)
+ .debug_info    0x0000a42c       0xe0 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-on-reset.o)
+ .debug_info    0x0000a50c       0xe8 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libc.a(default-on-bootstrap.o)
+ .debug_info    0x0000a5f4       0xd4 /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(pcache.o)
+ .debug_info    0x0000a6c8       0xcb /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(int_disable_interrupts_lib.o)
+ .debug_info    0x0000a793       0xcb /opt/microchip/mplabc32/v2.01/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/libmchp_peripheral_32MX360F512L.a(int_restore_interrupts_lib.o)
 
 .debug_abbrev   0x00000000     0x10fd
  *(.debug_abbrev)
